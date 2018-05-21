@@ -1,0 +1,152 @@
+.toogle_popup{
+	cursor: pointer;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 555;
+	background: rgba(38,48,64,0.8);
+	visibility: hidden;
+	opacity: 0;
+	&.toogle_popup_open{
+		right: 0;
+		visibility: visible;
+		opacity: 1;
+		.wrap__toogle_popup{
+			-webkit-transform: translate3d(0, 0, 0);
+			-moz-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
+	}
+	.close_burger{
+		margin-left: 103px;
+		margin-top: 73px;
+		padding: 0;
+	}
+}
+
+.wrap__toogle_popup{
+	height: 100%;
+	background-color: #273040;
+	max-width: 1171px;
+	width: 100%;
+	cursor: default;
+	-webkit-transform: translate3d(-1280px, 0, 0);
+	-moz-transform: translate3d(-1280px, 0, 0);
+	transform: translate3d(-1280px, 0, 0);
+	transition: all 0.5s ease 0s;
+}
+
+.content__toogle_popup{
+	margin-left: 103px;
+	margin-right: 81px;
+	margin-top: 89px;
+}
+
+.title__toogle_popup{
+	font-family: $ab;
+	font-size: 48px;
+	font-weight: bold;
+	color: #ffffff;
+	margin-bottom: 34px;
+}
+
+.flr__toogle_popup{
+	float: right;
+}
+
+.toogle_popup__slider{
+	margin-top: 64px;
+	height: 500px;
+	.item{
+		height: 500px;
+	}
+}
+
+.profile_instagram{
+	font-family: $am;
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 44px;
+	text-align: center;
+	margin-bottom: 170px;
+	a{
+		color: #f2f2f2;
+		&:hover, &:focus, &:active{
+			text-decoration: none;
+		}
+	}
+	span{
+		color: #fff;
+	}
+	img{
+		margin-right: 16px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.toogle_popup{
+		.close_burger{
+			margin-top: 40px;
+			margin-left: 40px;
+		}
+	}
+	.content__toogle_popup{
+		margin-left: 40px;
+		margin-right: 40px;
+		margin-top: 40px;
+	}
+	.item__toogle_popup__left{
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+	}
+	.wrap__item__toogle_popup__left{
+		.img__education_block{
+			max-width: 280px;
+			width: 100%;
+		}
+	}
+	.profile_instagram{
+		margin-bottom: 51px;
+		margin-top: 22px;
+	}
+}
+
+@media only screen and (max-width: 736px) {
+	.toogle_popup{
+		.close_burger{
+			margin: 0 auto;
+			margin-top: 40px;
+			width: 140px;
+			display: block;
+		}
+	}
+	.title__toogle_popup{
+		text-align: center;
+		font-size: 21px;
+		color: #f2f2f2;
+	}
+	.wrap__item__toogle_popup__left{
+		.img__education_block{
+			margin-bottom: 22px;
+			height: 227px;
+		}
+	}
+	.toogle_popup__slider{
+		margin-top: 22px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.toogle_popup__slider .item, .toogle_popup__slider{
+		height: 242px;
+	}
+	.content__toogle_popup{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.desc__education_block{
+		margin: 0 20px;
+	}
+}
